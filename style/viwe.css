@@ -1,0 +1,302 @@
+body {
+  display: grid;
+  transform: translateX(0);
+}
+
+* {
+  font-family: "Dosis", sans-serif;
+  list-style-type: none;
+}
+
+.hero {
+  background-image: linear-gradient(90deg, #589996, rgba(17, 73, 80, 0.8431372549));
+  -webkit-clip-path: polygon(0 0, 120% 0%, 120% 100%, 0 75%);
+          clip-path: polygon(0 0, 120% 0%, 120% 100%, 0 75%);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.hero h2 {
+  background-image: linear-gradient(90deg, #f6fbfb, #a9b2af);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  padding-top: 30px;
+}
+.hero .pp {
+  color: #fff;
+  width: 75%;
+  
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .container-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  width: 20rem;
+  padding: 20px 50px;
+}
+.about .container-img img:hover {
+  transform: scale(0.9);
+}
+.about .container-text {
+  text-align: center;
+  width: 50%;
+  padding: 20px;
+}
+.about .know-mor {
+  border: 3px solid #fff;
+  background-color: black;
+  padding: 10px 50px;
+  border-radius: 20px;
+  color: #fff;
+  transition: all 0.8s ease-in-out;
+}
+.about .know-mor:hover {
+  background-color: #fff;
+  color: black;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.276);
+  width: 100%;
+  height: 250px;
+}
+.price p {
+  font-size: 1rem;
+  text-align: center;
+  width: 50%;
+  font-style: italic;
+}
+
+.about-2 {
+  display: flex;
+  padding: 20px 30px;
+  justify-content: center;
+}
+.about-2 .container-text-2 {
+  text-align: center;
+  width: 50%;
+  padding: 20px;
+}
+.about-2 .container-img-2 img {
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 25%;
+  width: 20rem;
+  padding: 20px 50px;
+  transition: all 0.8s ease-in-out;
+}
+.about-2 .know-mor-2 {
+  border: 3px solid #fff;
+  background-color: black;
+  padding: 10px 50px;
+  border-radius: 20px;
+  color: #fff;
+  transition: all 0.8s ease-in-out;
+}
+.about-2 .know-mor-2:hover {
+  background-color: #fff;
+  color: black;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+}
+.about-2 .container-img-2 img:hover {
+  transform: scale(0.9);
+}
+
+.updat .container-updat {
+  display: flex;
+  background-color: rgba(93, 88, 122, 0.1529411765);
+  justify-content: space-around;
+}
+.updat .container-updat img {
+  width: 15rem;
+  height: 20rem;
+}
+.updat .container-updat .ebtn {
+  display: flex;
+}
+.updat .container-updat .ebtn .container-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.updat .container-updat .ebtn .container-email h1 {
+  padding: 10px 0px;
+}
+.updat .container-updat .ebtn .container-email .email {
+  border: 0px solid white;
+  border-radius: 25px;
+  padding: 10px 60px;
+}
+.updat .container-updat .ebtn .container-email .login {
+  border: 0px solid white;
+  border-radius: 25px;
+  padding: 10px 50px;
+  background: linear-gradient(0deg, #302ea1, #6a5faa);
+  margin-top: -2.3rem;
+  margin-right: -16rem;
+  cursor: pointer;
+  color: white;
+}
+
+.price-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  align-items: center;
+  padding: 50px 0;
+}
+.price-list .container-full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+}
+.price-list .container-full .container-list-1 li {
+  text-align: center;
+  border: 2px solid #1917a8;
+  width: 150px;
+  height: 100px;
+  border-radius: 25px;
+}
+.price-list .container-full .container-list-1 .list-2 {
+  border: 2px solid #dd02ae;
+}
+.price-list .container-full .features-section {
+  color: black;
+}
+.price-list .container-full .features-section .features-list {
+  padding: 10px 0px;
+}
+.price-list .container-full .features-section .features-list li {
+  font-size: 0.5em;
+  margin-bottom: 1em;
+  margin-left: 2rem;
+  position: relative;
+}
+.price-list .container-full .features-section .features-list li::before {
+  content: "";
+  background-image: url("../assets/bullet.svg");
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -2em;
+  top: 2px;
+}
+.price-list .container-full .features-section img {
+  display: none;
+}
+.price-list .container-full .subscribe-now {
+  background: linear-gradient(0deg, #1917a8, #4e34dd);
+  border-radius: 25px;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  cursor: pointer;
+}
+.price-list .container-full .subscribe-now-2 {
+  background: linear-gradient(0deg, #c20e9b, #dbb3d1);
+  border-radius: 25px;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.container-end {
+  background-image: linear-gradient(90deg, #589996, rgba(17, 73, 80, 0.8431372549));
+}
+.container-end .titl-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.container-end .titl-end h1 {
+  text-align: center;
+  width: 50%;
+  color: white;
+}
+.container-end .titl-end .btn-end {
+  display: flex;
+  gap: 60px;
+  padding: 20px 0;
+}
+.container-end .titl-end .btn-end .started {
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  padding: 8px 16px;
+  background: linear-gradient(0deg, #1917a8, #4e34dd);
+  cursor: pointer;
+}
+.container-end .titl-end .btn-end .contact {
+  border: 0px solid white;
+  border-radius: 25px;
+  background: linear-gradient(0deg, #a8177d, #ca81b3);
+  padding: 8px 16px;
+  color: white;
+  cursor: pointer;
+}
+.container-end .ranking-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.container-end .ranking-row img {
+  width: 15rem;
+  height: 15rem;
+}
+.container-end .ranking-row .list-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+.container-end .ranking-row .list-1 li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+.container-end .ranking-row .list-1 li a:hover {
+  font-weight: 700;
+  color: rgb(15, 15, 15);
+}
+
+@media (max-width: 750px) {
+  .hero,
+  .about,
+  .price,
+  .about-2,
+  .updat,
+  .price,
+  .price-list,
+  .container-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pp {
+    margin-bottom: 80px;
+    width: 50%;
+  }
+}/*# sourceMappingURL=viwe.css.map */
